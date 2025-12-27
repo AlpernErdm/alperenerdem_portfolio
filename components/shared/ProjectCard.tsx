@@ -35,11 +35,11 @@ export function ProjectCard({
       )}
       onClick={onClick}
     >
-      <Card className="overflow-hidden h-full hover:shadow-2xl active:shadow-xl transition-shadow duration-300">
+      <Card className="overflow-hidden h-full hover:shadow-2xl active:shadow-xl transition-shadow duration-300 flex flex-col">
         {/* Project Info */}
         <div className="p-4 sm:p-5 md:p-6">
           <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 line-clamp-2">{project.title}</h3>
-          <p className="text-sm text-muted-foreground mb-4 line-clamp-2">{project.description}</p>
+          <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{project.description}</p>
 
           <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4">
             {project.technologies.slice(0, 4).map((tech, i) => (

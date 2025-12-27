@@ -14,9 +14,9 @@ interface TypewriterEffectProps {
 export function TypewriterEffect({
   words,
   className = '',
-  typingSpeed = 100,
-  deletingSpeed = 50,
-  delayBetweenWords = 2000,
+  typingSpeed = 150,
+  deletingSpeed = 75,
+  delayBetweenWords = 3000,
 }: TypewriterEffectProps) {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');

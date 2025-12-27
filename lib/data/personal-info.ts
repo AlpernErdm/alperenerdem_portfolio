@@ -12,7 +12,7 @@ const socialLinksRaw: Omit<PersonalInfo["socialLinks"][0], "icon">[] = [
   },
   {
     platform: "website",
-    url: "https://alpernerdm.github.io",
+    url: "https://alperenerdem-portfolio.vercel.app",
   },
   {
     platform: "email",

@@ -36,17 +36,17 @@ export const metadata: Metadata = {
     "İstanbul",
     "Yazılım Geliştirici",
   ],
-  authors: [{ name: "Alperen Erdem", url: "https://alpernerdm.github.io" }],
+  authors: [{ name: "Alperen Erdem", url: "https://alperenerdem-portfolio.vercel.app" }],
   creator: "Alperen Erdem",
   publisher: "Alperen Erdem",
-  metadataBase: new URL("https://alpernerdm.github.io"),
+  metadataBase: new URL("https://alperenerdem-portfolio.vercel.app"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    url: "https://alpernerdm.github.io",
+    url: "https://alperenerdem-portfolio.vercel.app",
     title: "Alperen Erdem - Full-Stack Developer | .NET Specialist",
     description:
       "Full-Stack Developer ve .NET Specialist. .NET Core, React, TypeScript ile modern web uygulamaları geliştiriyorum.",
@@ -96,8 +96,8 @@ export default function RootLayout({
     jobTitle: "Full-Stack Developer",
     description:
       "Full-Stack Developer ve .NET Specialist. Ahi Evran Üniversitesi Bilgisayar Mühendisliği mezunu.",
-    url: "https://alpernerdm.github.io",
-    image: "https://alpernerdm.github.io/images/profile.jpeg",
+    url: "https://alperenerdem-portfolio.vercel.app",
+    image: "https://alperenerdem-portfolio.vercel.app/images/profile.jpeg",
     email: "alpernerdm@gmail.com",
     telephone: "+905078663734",
     address: {
@@ -114,7 +114,7 @@ export default function RootLayout({
     sameAs: [
       "https://github.com/alpernerdm",
       "https://www.linkedin.com/in/alpernerdm",
-      "https://alpernerdm.github.io",
+      "https://alperenerdem-portfolio.vercel.app",
     ],
     knowsAbout: [
       ".NET Core",

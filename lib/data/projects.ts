@@ -2,7 +2,7 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
-    id: "3",
+    id: "4",
     title: "MindSpace - Modern Blog Platform",
     description:
       "React 18, Next.js 14 ve TypeScript kullanarak tam kapsamlı, SEO uyumlu bir blog platformu",
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: "4",
+    id: "1",
     title: "MindSpace - RESTful API Backend",
     description: ".NET 9 ve Clean Architecture prensipleriyle kurumsal düzeyde API",
     longDescription:
@@ -42,7 +42,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: "1",
+    id: "2",
     title: "AI Tabanlı Fiş & Abonelik Yönetim Platformu",
     description:
       "Google Gemini AI entegrasyonu ile fiş görsellerinden otomatik veri çıkarma",

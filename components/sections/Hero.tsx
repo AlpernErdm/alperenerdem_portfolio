@@ -67,8 +67,6 @@ export function Hero({ personalInfo: propPersonalInfo }: HeroProps) {
                 priority
                 sizes="(max-width: 640px) 192px, (max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
               />
-              {/* Animated ring */}
-              <div className="absolute inset-0 rounded-full border-4 border-primary/30 animate-ping" />
             </div>
           </motion.div>
 

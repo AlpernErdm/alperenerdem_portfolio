@@ -29,10 +29,7 @@ export function ProjectCard({
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ delay: index * 0.1 }}
       whileHover={hoverLift}
-      className={cn(
-        "relative group cursor-pointer",
-        project.featured && "md:col-span-2 md:row-span-2"
-      )}
+      className={cn("relative group cursor-pointer")}
       onClick={onClick}
     >
       <Card className="overflow-hidden h-full hover:shadow-2xl active:shadow-xl transition-shadow duration-300 flex flex-col">

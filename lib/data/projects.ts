@@ -1,8 +1,46 @@
 import { Project } from "@/types";
 
 export const projects: Project[] = [
+  
+    {
+    id: "1",
+    title: "AI Tabanlı Fiş & Abonelik Yönetim Platformu",
+    description:
+      "Google Gemini AI entegrasyonu ile fiş görsellerinden otomatik veri çıkarma",
+    longDescription:
+      ".NET 9 ve CQRS (MediatR) mimarisi ile geliştirilen, abonelik ve harcama yönetimini sağlayan yüksek performanslı Backend API. Google Gemini AI entegrasyonu ile fiş görsellerinden otomatik veri çıkarma, analiz etme ve kategorize etme işlemleri gerçekleştirildi. Iyzico ödeme altyapısı entegre edilerek güvenli ödeme, tekrarlayan abonelik yönetimi kurgulandı.",
+    technologies: [
+      ".NET 9",
+      "MediatR",
+      "CQRS",
+      "Google Gemini AI",
+      "PostgreSQL",
+      "Iyzico",
+      "Docker",
+    ],
+    githubUrl: "https://github.com/AlpernErdm/SmartReceipt-Backend-API",
+    featured: true,
+  },
   {
-    id: "4",
+    id: "2",
+    title: "StokTakip - Modern Stok Takip Sistemi",
+    description:
+      ".NET 8, Elasticsearch ve RabbitMQ ile modüler stok yönetim sistemi",
+    longDescription:
+      ".NET 8 ve Clean Architecture prensipleriyle müşteri, tedarikçi ve stok hareketlerini yöneten modüler sistem. Elasticsearch entegrasyonu ile yazım hatalarını tolere edebilen gelişmiş arama altyapısı. RabbitMQ kullanılarak olay güdümlü mesajlaşma mimarisi uygulandı.",
+    technologies: [
+      ".NET 8",
+      "Elasticsearch",
+      "RabbitMQ",
+      "Clean Architecture",
+      "SQL",
+      "Swagger",
+    ],
+    githubUrl: "https://github.com/alpernerdm/stoktakip",
+    featured: false,
+  },
+  {
+    id: "3",
     title: "MindSpace - Modern Blog Platform",
     description:
       "React 18, Next.js 14 ve TypeScript kullanarak tam kapsamlı, SEO uyumlu bir blog platformu",
@@ -22,7 +60,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: "1",
+    id: "4",
     title: "MindSpace - RESTful API Backend",
     description: ".NET 9 ve Clean Architecture prensipleriyle kurumsal düzeyde API",
     longDescription:
@@ -41,43 +79,8 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/AlpernErdm/MindSpace.Backend",
     featured: true,
   },
-  {
-    id: "2",
-    title: "AI Tabanlı Fiş & Abonelik Yönetim Platformu",
-    description:
-      "Google Gemini AI entegrasyonu ile fiş görsellerinden otomatik veri çıkarma",
-    longDescription:
-      ".NET 9 ve CQRS (MediatR) mimarisi ile geliştirilen, abonelik ve harcama yönetimini sağlayan yüksek performanslı Backend API. Google Gemini AI entegrasyonu ile fiş görsellerinden otomatik veri çıkarma, analiz etme ve kategorize etme işlemleri gerçekleştirildi. Iyzico ödeme altyapısı entegre edilerek güvenli ödeme, tekrarlayan abonelik yönetimi kurgulandı.",
-    technologies: [
-      ".NET 9",
-      "MediatR",
-      "CQRS",
-      "Google Gemini AI",
-      "PostgreSQL",
-      "Iyzico",
-      "Docker",
-    ],
-    githubUrl: "https://github.com/AlpernErdm/SmartReceipt-Backend-API",
-    featured: true,
-  },
-  {
-    id: "3",
-    title: "StokTakip - Modern Stok Takip Sistemi",
-    description:
-      ".NET 8, Elasticsearch ve RabbitMQ ile modüler stok yönetim sistemi",
-    longDescription:
-      ".NET 8 ve Clean Architecture prensipleriyle müşteri, tedarikçi ve stok hareketlerini yöneten modüler sistem. Elasticsearch entegrasyonu ile yazım hatalarını tolere edebilen gelişmiş arama altyapısı. RabbitMQ kullanılarak olay güdümlü mesajlaşma mimarisi uygulandı.",
-    technologies: [
-      ".NET 8",
-      "Elasticsearch",
-      "RabbitMQ",
-      "Clean Architecture",
-      "SQL",
-      "Swagger",
-    ],
-    githubUrl: "https://github.com/alpernerdm/stoktakip",
-    featured: false,
-  },
+
+  
   {
     id: "5",
     title: "CereAIXDR",

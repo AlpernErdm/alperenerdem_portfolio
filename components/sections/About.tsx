@@ -22,6 +22,12 @@ interface AboutProps {
     university: string;
     degree: string;
     years: string;
+    bootcamp?: {
+      name: string;
+      provider: string;
+      period: string;
+      description: string;
+    };
   };
   goals: string;
   contact: {
@@ -91,10 +97,29 @@ export function About({ bio, education, goals, contact }: AboutProps) {
                     Eğitim
                   </h3>
                 </div>
-                <div className="space-y-2">
-                  <p className="font-semibold text-base sm:text-lg">{education.university}</p>
-                  <p className="text-sm sm:text-base text-muted-foreground">{education.degree}</p>
-                  <Badge variant="secondary" className="mt-2">{education.years}</Badge>
+                <div className="space-y-4">
+                  <div className="space-y-2">
+                    <p className="font-semibold text-base sm:text-lg">{education.university}</p>
+                    <p className="text-sm sm:text-base text-muted-foreground">{education.degree}</p>
+                    <Badge variant="secondary" className="mt-2">{education.years}</Badge>
+                  </div>
+
+                  {education.bootcamp && (
+                    <div className="pt-4 border-t border-border/40 space-y-2">
+                      <p className="font-semibold text-base sm:text-lg">
+                        {education.bootcamp.name}
+                      </p>
+                      <p className="text-sm sm:text-base text-muted-foreground">
+                        {education.bootcamp.provider}
+                      </p>
+                      <Badge variant="secondary" className="mt-2">
+                        {education.bootcamp.period}
+                      </Badge>
+                      <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                        {education.bootcamp.description}
+                      </p>
+                    </div>
+                  )}
                 </div>
               </div>
             </Card>

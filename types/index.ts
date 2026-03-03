@@ -19,6 +19,12 @@ export interface PersonalInfo {
     university: string;
     degree: string;
     years: string;
+    bootcamp?: {
+      name: string;
+      provider: string;
+      period: string;
+      description: string;
+    };
   };
   goals: string;
   socialLinks: SocialLink[];

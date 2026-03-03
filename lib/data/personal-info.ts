@@ -28,11 +28,18 @@ export const personalInfoData = {
   phone: "+90 507 866 37 34",
   location: "Eyüp, İstanbul",
   profileImage: "/images/profile.jpeg",
-  bio: `Ahi Evran Üniversitesi Bilgisayar Mühendisliği 2024 mezunuyum. Akademik eğitimim ve geliştirdiğim projeler süresince .NET ekosistemi ve C# üzerinde uzmanlaşmaya odaklandım. Yazılım geliştirme süreçlerinde temiz kod (clean code) prensiplerini ve sektörün en iyi uygulamalarını (best practices) benimseyen bir mühendis olarak; teknik yetkinliklerimi sürekli güncel tutmayı ilke ediniyorum. Kısa vadede .NET teknolojilerindeki uzmanlığımı derinleştirmeyi, uzun vadede ise ölçeklenebilir projelerde sorumluluk alarak yenilikçi ve katma değer sağlayan çözümlere liderlik etmeyi hedefliyorum.`,
+  bio: `Ahi Evran Üniversitesi Bilgisayar Mühendisliği 2024 mezunuyum. Akademik eğitimim ve geliştirdiğim projeler süresince .NET ekosistemi ve C# üzerinde uzmanlaşmaya odaklandım. Inveon & Coderspace iş birliğiyle düzenlenen Full-Stack Bootcamp programını (Aralık 2024 - Şubat 2025) tamamlayarak .NET ve React odaklı full-stack bitirme projesi geliştirdim. Yazılım geliştirme süreçlerinde temiz kod (clean code) prensiplerini ve sektörün en iyi uygulamalarını (best practices) benimseyen bir mühendis olarak; teknik yetkinliklerimi sürekli güncel tutmayı ilke ediniyorum. Kısa vadede .NET teknolojilerindeki uzmanlığımı derinleştirmeyi, uzun vadede ise ölçeklenebilir projelerde sorumluluk alarak yenilikçi ve katma değer sağlayan çözümlere liderlik etmeyi hedefliyorum.`,
   education: {
     university: "Ahi Evran Üniversitesi",
     degree: "Bilgisayar Mühendisliği",
     years: "2019-2024",
+    bootcamp: {
+      name: "Full-Stack Bootcamp",
+      provider: "Inveon & Coderspace",
+      period: "Aralık 2024 - Şubat 2025",
+      description:
+        "Inveon & Coderspace iş birliğiyle düzenlenen .NET ve React odaklı Full-Stack Bootcamp programını başarıyla tamamlayarak kapsamlı bir full-stack bitirme projesi geliştirdim.",
+    },
   },
   goals: `Kısa vadede sektörün en iyi uygulamaları (best practices) ile uzmanlığımı derinleştirmeyi, uzun vadede ise büyük ölçekli projelerde liderlik sorumluluğu alarak yenilikçi çözümler üretmeyi hedefliyorum.`,
 };

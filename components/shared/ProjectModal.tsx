@@ -22,12 +22,12 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
 
   return (
     <Dialog open={!!project} onOpenChange={onClose}>
-      <DialogContent className="max-w-[95vw] sm:max-w-[90vw] md:max-w-3xl lg:max-w-4xl max-h-[90vh] overflow-y-auto">
+      <DialogContent className="max-w-[90vw] sm:max-w-[80vw] md:max-w-2xl lg:max-w-3xl max-h-[85vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="text-2xl sm:text-3xl font-bold pr-8">
+          <DialogTitle className="text-2xl sm:text-3xl font-bold pr-8 leading-snug">
             {project.title}
           </DialogTitle>
-          <DialogDescription className="text-sm sm:text-base">
+          <DialogDescription className="text-sm sm:text-base leading-relaxed">
             {project.description}
           </DialogDescription>
         </DialogHeader>

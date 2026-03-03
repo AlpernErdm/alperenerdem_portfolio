@@ -1,24 +1,9 @@
 import { Experience } from "@/types";
 
 export const experiences: Experience[] = [
+
   {
     id: "1",
-    company: "360Interactive",
-    position: "Yazılım Geliştirici",
-    startDate: "Ağustos 2025",
-    endDate: "Halen",
-    description: [
-      ".Net Core, EF Core, PostgreSQL kullanarak B2B moda pazar yeri projesi için ölçeklenebilir RESTful API'ler geliştirdim",
-      "PostgreSQL üzerinde sorgu ve indeks optimizasyonları yaparak veritabanı performansını artırdım",
-      "Satıcı, ürün, stok ve sipariş modüllerinin entegrasyonunu sağladım",
-      "JWT yetkilendirme ve dosya yükleme altyapılarını kurdum",
-      "Scrum metodolojisi dahilinde sprint planlama ve daily toplantılarına aktif katılım sağladım",
-    ],
-    technologies: [".NET Core", "EF Core", "PostgreSQL", "JWT", "Scrum"],
-    type: "full-time",
-  },
-  {
-    id: "2",
     company: "PowerDev",
     position: "Yazılım Geliştirici",
     startDate: "Ağustos 2025",
@@ -32,7 +17,7 @@ export const experiences: Experience[] = [
     type: "part-time",
   },
   {
-    id: "3",
+    id: "2",
     company: "Cerebrum Tech",
     position: "Yazılım Geliştirme Uzmanı",
     startDate: "Ekim 2024",
@@ -48,7 +33,7 @@ export const experiences: Experience[] = [
     type: "full-time",
   },
   {
-    id: "4",
+    id: "3",
     company: "Ahi Evran Üniversitesi",
     position: "Back-End Developer",
     startDate: "Kasım 2023",
@@ -70,7 +55,7 @@ export const experiences: Experience[] = [
     type: "full-time",
   },
   {
-    id: "5",
+    id: "4",
     company: "VBT Yazılım",
     position: "Yazılım Geliştirici Stajyer",
     startDate: "Ağustos 2023",
@@ -83,7 +68,7 @@ export const experiences: Experience[] = [
     type: "internship",
   },
   {
-    id: "6",
+    id: "5",
     company: "Seyir Mobil",
     position: "Yazılım Geliştirici Stajyer",
     startDate: "Ağustos 2022",

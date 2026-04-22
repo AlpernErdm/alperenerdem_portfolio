@@ -23,6 +23,9 @@ export const skillCategories: SkillCategory[] = [
       { name: "HTML/CSS", level: 5 },
     ],
   },
+  /**/
+
+  
   {
     name: "Veritabanı",
     skills: [

@@ -9,8 +9,6 @@ const contactSchema = z.object({
   message: z.string().min(10, 'Mesaj en az 10 karakter olmalıdır'),
 });
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
@@ -26,6 +24,7 @@ export async function POST(request: NextRequest) {
 
     const { name, email, subject, message } = validationResult.data;
 
+    const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
       from: 'Portfolio <onboarding@resend.dev>',
       to: 'alpir756@gmail.com',

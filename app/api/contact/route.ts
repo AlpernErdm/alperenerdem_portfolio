@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
+import { Resend } from 'resend';
 
 const contactSchema = z.object({
   name: z.string().min(2, 'İsim en az 2 karakter olmalıdır'),
@@ -8,13 +9,14 @@ const contactSchema = z.object({
   message: z.string().min(10, 'Mesaj en az 10 karakter olmalıdır'),
 });
 
+const resend = new Resend(process.env.RESEND_API_KEY);
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    
-    // Validate the request body
+
     const validationResult = contactSchema.safeParse(body);
-    
+
     if (!validationResult.success) {
       return NextResponse.json(
         { error: 'Validation failed', details: validationResult.error.issues },
@@ -24,43 +26,22 @@ export async function POST(request: NextRequest) {
 
     const { name, email, subject, message } = validationResult.data;
 
-    // TODO: Implement email sending logic here
-    // For now, we'll just log the data and return success
-    // You can integrate with EmailJS, Resend, or any other email service
-    
-    console.log('Contact form submission:', {
-      name,
-      email,
-      subject,
-      message,
-      timestamp: new Date().toISOString(),
+    await resend.emails.send({
+      from: 'Portfolio <onboarding@resend.dev>',
+      to: 'alpir756@gmail.com',
+      subject: `Portfolio: ${subject}`,
+      html: `
+        <h2>Yeni İletişim Formu Mesajı</h2>
+        <p><strong>İsim:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Konu:</strong> ${subject}</p>
+        <p><strong>Mesaj:</strong></p>
+        <p>${message.replace(/\n/g, '<br/>')}</p>
+      `,
     });
 
-    // Simulate email sending delay
-    await new Promise(resolve => setTimeout(resolve, 1000));
-
-    // In production, you would send the email here:
-    // Example with Resend:
-    // const resend = new Resend(process.env.RESEND_API_KEY);
-    // await resend.emails.send({
-    //   from: 'Portfolio <onboarding@resend.dev>',
-    //   to: 'alpernerdm@gmail.com',
-    //   subject: `Portfolio Contact: ${subject}`,
-    //   html: `
-    //     <h2>New Contact Form Submission</h2>
-    //     <p><strong>Name:</strong> ${name}</p>
-    //     <p><strong>Email:</strong> ${email}</p>
-    //     <p><strong>Subject:</strong> ${subject}</p>
-    //     <p><strong>Message:</strong></p>
-    //     <p>${message}</p>
-    //   `,
-    // });
-
     return NextResponse.json(
-      { 
-        success: true, 
-        message: 'Mesajınız başarıyla gönderildi!' 
-      },
+      { success: true, message: 'Mesajınız başarıyla gönderildi!' },
       { status: 200 }
     );
   } catch (error) {
